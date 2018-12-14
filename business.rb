@@ -259,9 +259,6 @@ module Business
   class Type < Business::Base;
   end
 
-# add two comments.  ....
-#comment two
-
   class BusinessManagerMonths < Business::Base
     belongs_to :buser
 
