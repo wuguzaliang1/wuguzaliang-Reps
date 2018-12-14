@@ -171,6 +171,8 @@ module Business
           end
         end
 
+        # comments threee.....
+        #
         year_one = fallplan.year
         year_two = year_one + 1
         items = DouItem.where(dou_id: fallplan.id)&.pluck(:ItemNum)&.uniq
