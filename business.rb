@@ -207,6 +207,7 @@ module Business
                                                         oct: planned_effort.OctRes.to_f,
                                                         nov: planned_effort.NovRes.to_f,
                                                         dec: planned_effort.DecRes.to_f)
+          puts "planned effort"
         end
         puts " - Create Failed: DOU #{dou.id} Can Not Be Saved" unless fallplan.save
       end
