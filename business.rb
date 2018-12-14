@@ -39,7 +39,7 @@ module Business
         buser.business_manager_months.each do |bm|
           year = bm['Year'].to_i
           managers = {}
-
+        # a comments to test
           BusinessManagerMonths::MONTHS.each do |month, column|
             manager_id = bm[column].to_i
 
