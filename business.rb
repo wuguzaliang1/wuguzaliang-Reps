@@ -9,7 +9,11 @@ module Business
     has_many :roles, through: :busers_roles
     has_many :business_manager_months, class_name: 'Business::BusinessManagerMonths', foreign_key: 'buser_id'
     has_many :reporting_manager_months, class_name: 'Business::ReportingManagerMonths', foreign_key: 'buser_id'
-
+    # edit again
+    
+    # edit again
+    # edit again
+    # edit again
     def self.sync
       all.each do |buser|
         next unless buser.active? || (!buser.inactive_date.nil? && buser.inactive_date.to_date >= '2018-01-01'.to_date)
