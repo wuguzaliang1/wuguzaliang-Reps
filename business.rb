@@ -224,7 +224,8 @@ module Business
       puts '=== End of DOU/Fallplan Sync ==='
     end
   end
-
+# add two comments.  ....
+#comment two
   class DouItem < Business::Base
     belongs_to :dou, class_name: 'Business::Dou', foreign_key: 'dou_id'
     belongs_to :item_cat, class_name: 'Business::ItemCat', foreign_key: 'ItemNum'
